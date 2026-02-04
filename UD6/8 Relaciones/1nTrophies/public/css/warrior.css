@@ -1,0 +1,395 @@
+/* 
+ * ⚔️ WARRIOR THEME CSS ⚔️
+ * Estilo épico de guerrero para Laravel Trophies
+ */
+
+/* === FUENTES === */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Uncial+Antiqua&display=swap');
+
+/* === VARIABLES === */
+:root {
+    --warrior-gold: #d4af37;
+    --warrior-dark-gold: #b8962e;
+    --warrior-bronze: #cd7f32;
+    --warrior-blood: #8b0000;
+    --warrior-dark-blood: #5c0000;
+    --warrior-steel: #71797E;
+    --warrior-dark: #1a1a2e;
+    --warrior-darker: #0f0f1a;
+    --warrior-leather: #8B4513;
+    --warrior-parchment: #f5e6c8;
+    --warrior-shadow: rgba(0, 0, 0, 0.7);
+    --warrior-glow: rgba(212, 175, 55, 0.3);
+}
+
+/* === BODY & GENERAL === */
+body {
+    background: linear-gradient(135deg, var(--warrior-darker) 0%, var(--warrior-dark) 50%, #16213e 100%);
+    background-attachment: fixed;
+    font-family: 'Cinzel', serif;
+    color: var(--warrior-parchment);
+    min-height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4af37' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* === NAVEGACIÓN === */
+nav.container-fluid {
+    background: linear-gradient(180deg, var(--warrior-dark) 0%, transparent 100%);
+    border-bottom: 3px solid var(--warrior-gold);
+    box-shadow: 0 4px 20px var(--warrior-shadow), 0 0 30px var(--warrior-glow);
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+nav.container-fluid::before,
+nav.container-fluid::after {
+    content: '⚔️';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    opacity: 0.7;
+}
+
+nav.container-fluid::before {
+    left: 1rem;
+}
+
+nav.container-fluid::after {
+    right: 1rem;
+}
+
+nav ul li a {
+    color: var(--warrior-gold) !important;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px var(--warrior-shadow);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--warrior-parchment) !important;
+    text-shadow: 0 0 20px var(--warrior-gold), 0 0 40px var(--warrior-gold);
+}
+
+nav ul li strong a {
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+/* === CONTENEDOR PRINCIPAL === */
+main.container {
+    background: linear-gradient(145deg, rgba(26, 26, 46, 0.95) 0%, rgba(15, 15, 26, 0.98) 100%);
+    border: 2px solid var(--warrior-gold);
+    border-radius: 10px;
+    box-shadow: 
+        0 0 30px var(--warrior-glow),
+        inset 0 0 60px rgba(0, 0, 0, 0.5);
+    margin: 2rem auto;
+    padding: 2rem;
+    position: relative;
+}
+
+main.container::before {
+    content: '🛡️';
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.5rem;
+    text-shadow: 0 0 20px var(--warrior-gold);
+}
+
+/* Esquinas decorativas */
+main.container::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid var(--warrior-dark-gold);
+    border-radius: 5px;
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+/* === TÍTULOS === */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Uncial Antiqua', cursive;
+    color: var(--warrior-gold);
+    text-shadow: 3px 3px 6px var(--warrior-shadow);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+h1::before, h1::after {
+    content: '⚜️';
+    margin: 0 1rem;
+    opacity: 0.8;
+}
+
+/* === TABLAS === */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: linear-gradient(180deg, rgba(139, 69, 19, 0.1) 0%, rgba(0, 0, 0, 0.3) 100%);
+    border: 2px solid var(--warrior-bronze);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px var(--warrior-shadow);
+}
+
+thead {
+    background: linear-gradient(180deg, var(--warrior-blood) 0%, var(--warrior-dark-blood) 100%);
+}
+
+thead tr th {
+    color: var(--warrior-gold) !important;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1rem;
+    border-bottom: 3px solid var(--warrior-gold);
+    text-shadow: 2px 2px 4px var(--warrior-shadow);
+}
+
+tbody tr {
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+tbody tr:hover {
+    background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.15) 50%, transparent 100%);
+    transform: scale(1.01);
+    box-shadow: 0 0 20px var(--warrior-glow);
+}
+
+tbody tr td {
+    padding: 1rem;
+    color: var(--warrior-parchment);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+tbody tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+tbody tr td strong {
+    color: var(--warrior-gold);
+    font-weight: 700;
+}
+
+/* === ENLACES === */
+a {
+    color: var(--warrior-gold);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+a:hover {
+    color: var(--warrior-parchment);
+    text-shadow: 0 0 10px var(--warrior-gold);
+}
+
+/* Botón estilo guerrero para "View trophies" */
+td a, p a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(180deg, var(--warrior-blood) 0%, var(--warrior-dark-blood) 100%);
+    border: 2px solid var(--warrior-gold);
+    border-radius: 5px;
+    color: var(--warrior-gold) !important;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    box-shadow: 0 4px 15px var(--warrior-shadow);
+    transition: all 0.3s ease;
+}
+
+td a:hover, p a:hover {
+    background: linear-gradient(180deg, var(--warrior-gold) 0%, var(--warrior-dark-gold) 100%);
+    color: var(--warrior-dark) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px var(--warrior-glow);
+}
+
+td a::before {
+    content: '🏆 ';
+}
+
+p a[href*="users"]::before {
+    content: '⬅️ ';
+}
+
+/* === MENSAJES Y ALERTAS === */
+mark {
+    background: linear-gradient(90deg, var(--warrior-gold), var(--warrior-dark-gold));
+    color: var(--warrior-dark);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 700;
+    box-shadow: 0 0 15px var(--warrior-glow);
+}
+
+details {
+    background: linear-gradient(180deg, rgba(139, 0, 0, 0.3) 0%, rgba(92, 0, 0, 0.5) 100%);
+    border: 2px solid var(--warrior-blood);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+details summary {
+    color: var(--warrior-gold);
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+details summary::before {
+    content: '⚠️ ';
+}
+
+/* === TEXTO MUTED === */
+.muted {
+    color: var(--warrior-steel) !important;
+    opacity: 0.8;
+}
+
+/* === FOOTER === */
+footer.container {
+    text-align: center;
+    padding: 2rem;
+    border-top: 2px solid var(--warrior-gold);
+    margin-top: 2rem;
+    background: linear-gradient(180deg, transparent 0%, var(--warrior-darker) 100%);
+}
+
+footer.container small {
+    color: var(--warrior-gold);
+    font-family: 'Cinzel', serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+footer.container small::before {
+    content: '⚔️ ';
+}
+
+footer.container small::after {
+    content: ' ⚔️';
+}
+
+/* === ANIMACIONES === */
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 10px var(--warrior-glow);
+    }
+    50% {
+        box-shadow: 0 0 30px var(--warrior-glow), 0 0 50px var(--warrior-gold);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+main.container {
+    animation: glow 4s ease-in-out infinite;
+}
+
+nav ul li strong a {
+    animation: float 3s ease-in-out infinite;
+    display: inline-block;
+}
+
+/* === SCROLLBAR PERSONALIZADO === */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--warrior-darker);
+    border: 1px solid var(--warrior-gold);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--warrior-gold) 0%, var(--warrior-dark-gold) 100%);
+    border-radius: 6px;
+    border: 2px solid var(--warrior-darker);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--warrior-parchment) 0%, var(--warrior-gold) 100%);
+}
+
+/* === SELECCIÓN DE TEXTO === */
+::selection {
+    background: var(--warrior-gold);
+    color: var(--warrior-dark);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+    nav.container-fluid::before,
+    nav.container-fluid::after {
+        display: none;
+    }
+    
+    h1::before, h1::after {
+        display: none;
+    }
+    
+    table {
+        font-size: 0.85rem;
+    }
+    
+    thead tr th,
+    tbody tr td {
+        padding: 0.5rem;
+    }
+}
+
+/* === EFECTOS ESPECIALES === */
+/* Brillo en el título principal */
+nav ul li strong a {
+    background: linear-gradient(90deg, var(--warrior-gold), var(--warrior-parchment), var(--warrior-gold));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
