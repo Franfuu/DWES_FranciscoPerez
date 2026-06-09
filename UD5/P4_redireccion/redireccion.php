@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 
     // Definir la URL de redirección
-    $url_redireccion = 'https://apple.com'; // URL de destino para la redirección
+    $url_redireccion = 'https://www.diariocordoba.com'; // URL de destino para la redirección
 
 
     // Validar que se ha seleccionado una cabecera válida

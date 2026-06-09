@@ -23,6 +23,7 @@
     print "<br> ID Sesión: " . session_id() . "<br>";
     print "<br> Fecha y hora de acceso: " . date("d/m/Y H:i:s") . "<br>";
 
+
 ?>
 
 

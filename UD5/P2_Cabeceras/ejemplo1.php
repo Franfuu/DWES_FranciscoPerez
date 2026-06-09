@@ -1,12 +1,12 @@
 <?php
-header('Content-Type: text/plain');
+    header('Content-Type: application/json');
+
+    $data = [
+        "nombre" => "Francisco",
+        "edad" => 25,
+        "ciudad" => "Madrid"
+    ];
 
 
-$data = [
-    "nombre" => "Juan",
-    "edad" => 25,
-    "ciudad" => "Madrid"
-];
-
-
-echo json_encode($data);
+    echo json_encode($data);
+?>

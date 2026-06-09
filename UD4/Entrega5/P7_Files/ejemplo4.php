@@ -1,8 +1,8 @@
 <?php
 $datos = [
     ['Nombre', 'Edad', 'Ciudad'],
-    ['Ana', 22, 'Sevilla'],
-    ['Juan', 25, 'Málaga']
+    ['Francisco', 21, 'Sevilla'],
+    ['Lucía', 25, 'Málaga']
 ];
 
 $fp = fopen('personas.csv', 'w');
