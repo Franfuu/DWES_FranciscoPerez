@@ -214,3 +214,23 @@ Route::resource('/note', 'App\Http\Controllers\NoteController');
 ## POST
 
 ![1747213842307](image/README/1747213842307.png)
+
+---
+
+# Código
+
+## Modelo `Note.php`
+
+![code_note_model](image/README/1762908852598.png)
+
+## `NoteController.php` (parte 1)
+
+![code_note_ctrl_1](image/README/1762956988076.png)
+
+## `NoteController.php` (parte 2)
+
+![code_note_ctrl_2](image/README/1762939698572.png)
+
+## `routes/api.php`
+
+![code_note_routes](image/README/1762973385259.png)

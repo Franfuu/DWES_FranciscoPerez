@@ -33,7 +33,7 @@ if ($count === 0) {
     ");
 
     $seed = [
-        ['u' => 'jgarcia',  'n' => 'Juan',    'a' => 'García López'],
+        ['u' => 'fperez',   'n' => 'Francisco', 'a' => 'Pérez Sánchez'],
         ['u' => 'mlopez',   'n' => 'María',   'a' => 'López Díaz'],
         ['u' => 'aperez',   'n' => 'Alberto', 'a' => 'Pérez Martín'],
         ['u' => 'cserrano', 'n' => 'Carmen',  'a' => 'Serrano Ruiz'],

@@ -1,8 +1,8 @@
 <?php
 // Nombre del fichero SQLite
 define("DB_NAME", "database.sqlite");
-    // Crear o abrir la base de datos
-try {   
+
+try {
     // Conexión con SQLite3 (estilo orientado a objetos)
     $db = new SQLite3(DB_NAME);
 

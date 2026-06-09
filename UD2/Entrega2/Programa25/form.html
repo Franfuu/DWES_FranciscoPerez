@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Formulario básico</title>
+</head>
+<body>
+  <h1>Formulario de Francisco Pérez</h1>
+  <form method="post" action="accion.php">
+    <p>
+      <label>Nombre: 
+        <input type="text" name="nombre" required>
+      </label>
+    </p>
+    <p>
+      <label>Email: 
+        <input type="email" name="email" required>
+      </label>
+    </p>
+    <p>
+      <label>Mensaje:<br>
+        <textarea name="mensaje" rows="4" cols="40" required></textarea>
+      </label>
+    </p>
+    <p>
+      <button type="submit">Enviar</button>
+    </p>
+  </form>
+</body>
+</html>
