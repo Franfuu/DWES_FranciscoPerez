@@ -23,7 +23,7 @@ try {
     $login = $_POST["login"];
     $password = $_POST["password"];
 
-    // Definimos la consulta SQL con marcadores importantes los 2 puntos
+    // Definimos la consulta SQL con marcadores
     $sql = "SELECT * FROM ud5__usuarios_pass WHERE user = :login AND pass = :password";
     $resultado = $base->prepare($sql);
 

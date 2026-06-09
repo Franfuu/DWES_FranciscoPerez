@@ -268,3 +268,19 @@ middleware1/
 **Francisco Pérez**  
 DWES - UD7 - Middleware Laravel
 
+---
+
+## Código
+
+### Middleware `EnsureUserNameIsAdmin.php`
+
+![code_middleware](image/README/1762906094553.png)
+
+### Registro del alias en `bootstrap/app.php`
+
+![code_bootstrap](image/README/1762902141471.png)
+
+### Ruta protegida en `routes/api.php`
+
+![code_routes](image/README/1762942332487.png)
+
